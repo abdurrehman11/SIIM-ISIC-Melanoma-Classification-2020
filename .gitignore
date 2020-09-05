@@ -129,10 +129,6 @@ dmypy.json
 .pyre/
 
 melanoma-best-single-model-no-meta-data/
-melanoma-predictions/
-melanoma-trained-models/
-
-static/
 logs/
 oofs/
 subs/
