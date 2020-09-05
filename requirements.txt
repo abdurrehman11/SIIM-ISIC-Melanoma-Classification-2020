@@ -1,0 +1,17 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.6.0
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torchvision==0.7.0
+-e git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git#egg=pytorch-gradual-warmup-lr
+albumentations==0.4.6
+pretrainedmodels==0.7.4
+resnest==0.0.6b20200823
+Pillow==7.2.0
+geffnet==1.0.0
+# apex==0.1
+flask==1.1.2
+tqdm==4.48.2
+opencv-python==4.4.0.42
+pandas==1.1.1
+numpy==1.19.1
+scikit-learn==0.23.2
