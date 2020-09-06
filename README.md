@@ -20,8 +20,8 @@ here : https://www.kaggle.com/haqishen/1st-place-soluiton-best-model-infer/data?
 - Upgrade pip using `pip install --upgrade pip`
 - Install dependencies using `pip install -r requirements.txt`
 
-# Model Training, Evaluation and Prediction
-Execute the below commands by passing your dataset path to `data-dir` parameter to start training, evaluation and prediction.
+# Model Training, Evaluation, Prediction & Ensembling
+Execute the below commands by passing your dataset path to `data-dir` parameter to start training, evaluation, prediction and ensembling.
 
 After training, models will be saved in `./weights/` Tranning logs will be saved in `./logs/`
 
@@ -34,6 +34,10 @@ Evaluation results will be printed out and saved to `./logs/` Out-of-folds predi
 Each models submission file will be saved to `./subs/`
 
 `python predict.py --kernel-type b3_256_256_meta_ext_15ep --data-dir E:/data/ --data-folder 256 --image-size 256 --enet-type efficientnet_b3 --use-meta`
+
+Ensemble of each single model's submission files (from previous step) into the final submission file wil be save in root directory as `final_sub1.csv`
+
+`python ensemble.py`
 
 # Web App Setup & Demo
 - Build Docker image using `docker build -f Dockerfile -t melanoma_api:v0 .`
