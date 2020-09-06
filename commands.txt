@@ -4,3 +4,5 @@ python train.py --kernel-type b3_256_256_meta_ext_15ep --data-dir E:/data/ --dat
 python evaluate.py --kernel-type b3_256_256_meta_ext_15ep --data-dir E:/data/ --data-folder 256 --image-size 256 
 --enet-type efficientnet_b3 --batch-size 2 --num-workers 4 --use-meta --DEBUG
 
+python predict.py --kernel-type b3_256_256_meta_ext_15ep --data-dir E:/data/ --data-folder 256 --image-size 256 
+--enet-type efficientnet_b3 --batch-size 2 --num-workers 4 --use-meta --DEBUG
