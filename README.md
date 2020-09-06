@@ -24,12 +24,15 @@ here : https://www.kaggle.com/haqishen/1st-place-soluiton-best-model-infer/data?
 Execute the below commands by passing your dataset path to `data-dir` parameter to start training, evaluation and prediction.
 
 After training, models will be saved in `./weights/` Tranning logs will be saved in `./logs/`
+
 `python train.py --kernel-type b3_256_256_meta_ext_15ep --data-dir /data/ --data-folder 256 --image-size 256 --enet-type efficientnet_b3 --use-meta`
 
 Evaluation results will be printed out and saved to `./logs/` Out-of-folds prediction results will be saved to `./oofs/`
+
 `python evaluate.py --kernel-type b3_256_256_meta_ext_15ep --data-dir /data/ --data-folder 256 --image-size 256 --enet-type efficientnet_b3 --use-meta`
 
 Each models submission file will be saved to `./subs/`
+
 `python predict.py --kernel-type b3_256_256_meta_ext_15ep --data-dir E:/data/ --data-folder 256 --image-size 256 --enet-type efficientnet_b3 --use-meta`
 
 # Web App Setup & Demo
